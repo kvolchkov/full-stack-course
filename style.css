@@ -1,0 +1,132 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+/* Selector's conflict: START */
+
+ul {
+  color: blue;
+  line-height: 1.5;
+}
+
+ul li {
+  color: red;
+}
+
+.list-item {
+  color: orange;
+}
+
+ul .list-item {
+  color: green;
+}
+
+.list-item:first-child {
+  color: var(--primary-color);
+}
+
+/* Selector's conflict: END */
+
+/* Explanation of the CSS code above:
+Just FYI: I haven't generated this text. It is written manually. ;)
+
+The Blue is a base color for all list items. It is never applied
+because of the specificity 0,0,1. 
+The Red could have been applied however it has specificity of 0,0,2
+and there are selectors with higher specificity. 
+The Green color is applied to list items 2 and 3 because its' specificity
+is 0,1,1. Which is the second highest. 
+The Violet color (or primary) is applied to the first list item. 
+It has the highest specificity of 0,2,0. 
+
+*/
+
+/* Selector's conflict: START */
+
+button {
+  color: white;
+  cursor: pointer;
+}
+
+button:focus {
+  background-color: var(--primary-color);
+}
+
+.button#button-accept {
+  color: green;
+}
+
+button.button {
+  color: red;
+}
+
+#button-cancel {
+  color: black;
+}
+
+/* Selector's conflict: END */
+
+/* Short explanation of the CSS code above:
+The approach is the same + I added ids. I have defined styles using selector's specificity. 
+
+- Accept button. The highest specificity (1,1,0) has the the .button#button-accept selector. 
+It selects the specific button (by id) and sets the color to green. 
+- Decline button. It has the red color. Although the selector is not the highest, 
+black and green colors are not applied because they are used for specific buttons. 
+The white color is not applied because it is defined by a selector 
+with lower specificity.
+- Cancel button. It is black and not white because the selector 1,0,0 is higher
+then 0,0,1. 
+
+*/
+
+form:first-child {
+  color: blue;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+}
+
+input:focus {
+  color: var(--primary-color);
+  border: 2px solid;
+  outline: none;
+}
+.link::before {
+  content: "-";
+}
+
+a[href$="google.com"] {
+  color: red;
+  padding: 4px;
+}
+
+a[href$="yahoo.com"] {
+  color: black;
+  padding: 4px;
+}
+
+div > p.text {
+  color: green;
+  padding: 4px;
+}
+
+:root {
+  --primary-color: #8a2be2;
+}
