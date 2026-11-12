@@ -1,3 +1,4 @@
-/node-modules
+node-modules/
 /images
+.DS_Store
 .env
