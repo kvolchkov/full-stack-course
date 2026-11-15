@@ -1,0 +1,45 @@
+<svg viewBox="0 0 250 250" width="250" height="250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="250" height="250" rx="15" fill="#f4f6f9" />
+
+  <!-- Backlog Board in Background -->
+  <rect x="35" y="30" width="180" height="85" rx="5" fill="#eceff1" stroke="#cfd8dc" stroke-width="2" />
+  <rect x="45" y="45" width="45" height="30" fill="#ffecb3" rx="2" />
+  <rect x="100" y="45" width="45" height="30" fill="#c8e6c9" rx="2" />
+  <rect x="155" y="45" width="45" height="30" fill="#bbdefb" rx="2" />
+  <line x1="45" y1="85" x2="205" y2="85" stroke="#90a4ae" stroke-dasharray="4" stroke-width="2" />
+
+  <!-- Minion 1 (Left - PO) -->
+  <g transform="translate(15, 60)">
+    <rect x="30" y="40" width="45" height="90" rx="22.5" fill="#fbc02d" />
+    <path d="M30 90 L75 90 L75 130 L30 130 Z" fill="#1565c0" /> <!-- Overalls -->
+    <circle cx="52.5" cy="65" r="12" fill="#b0bec5" />
+    <circle cx="52.5" cy="65" r="9" fill="#fff" />
+    <circle cx="52.5" cy="65" r="4" fill="#4e342e" />
+    <path d="M45 82 Q52.5 86 60 82" fill="none" stroke="#2c3e50" stroke-width="2" stroke-linecap="round" />
+    <!-- Sticky note in hand -->
+    <rect x="65" y="95" width="15" height="15" fill="#ffeb3b" />
+  </g>
+
+  <!-- Minion 2 (Center - Lead PO) -->
+  <g transform="translate(85, 45)">
+    <rect x="30" y="40" width="55" height="105" rx="27" fill="#fbc02d" />
+    <path d="M30 100 L85 100 L85 145 L30 145 Z" fill="#1565c0" />
+    <circle cx="57.5" cy="65" r="14" fill="#b0bec5" />
+    <circle cx="57.5" cy="65" r="11" fill="#fff" />
+    <circle cx="55" cy="65" r="4.5" fill="#4e342e" />
+    <path d="M48 85 Q57.5 92 67 85" fill="none" stroke="#2c3e50" stroke-width="2.5" stroke-linecap="round" />
+    <!-- Pointing finger / Clipboard -->
+    <rect x="15" y="105" width="20" height="25" rx="2" fill="#795548" />
+  </g>
+
+  <!-- Minion 3 (Right - PO) -->
+  <g transform="translate(160, 60)">
+    <rect x="30" y="40" width="45" height="90" rx="22.5" fill="#fbc02d" />
+    <path d="M30 90 L75 90 L75 130 L30 130 Z" fill="#1565c0" />
+    <circle cx="52.5" cy="65" r="12" fill="#b0bec5" />
+    <circle cx="52.5" cy="65" r="9" fill="#fff" />
+    <circle cx="52.5" cy="65" r="4" fill="#4e342e" />
+    <path d="M45 82 Q52.5 78 60 82" fill="none" stroke="#2c3e50" stroke-width="2" stroke-linecap="round" />
+  </g>
+</svg>
