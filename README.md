@@ -23,6 +23,7 @@ To open the website, open the link [https://kvolchkov.github.io/full-stack-cours
 ### Results:
 
 - Testing has found no major UI differences
+- The table is displayed correctly
 - Styles show that the `services.html` page consumes the `style.css` correctly.
 
 ### Evidence:
