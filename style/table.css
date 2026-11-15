@@ -1,0 +1,16 @@
+.-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
+.services-table th,
+.services-table td {
+  border: 1px solid #cccccc;
+  padding: 12px;
+  text-align: left;
+}
+
+.services-table tbody td:nth-child(1) {
+  background-color: #8748eb;
+}
