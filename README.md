@@ -15,9 +15,41 @@ To open the website, open the link [https://kvolchkov.github.io/full-stack-cours
 
 ## Testing details
 
-The website was tested in 2 browsers:
+### The website was tested in 2 browsers:
 
 - Chrome
 - Safari
 
-Result: Testing has found no major differences
+### Results:
+
+- Testing has found no major UI differences
+- Styles show that the `services.html` page consumes the `style.css` correctly.
+
+### Evidence:
+
+Font is applied:
+
+```css
+- font-family
+Roboto, sans-serif
+```
+
+All margine are set to 0 due to the normalization
+
+```css
+- margin-bottom
+0px
+- margin-left
+0px
+- margin-right
+0px
+- margin-top
+0px
+```
+
+The max-width is set to 1200
+
+```css
+- max-width
+1200px
+```
