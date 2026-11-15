@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Contact us</title>
+  </head>
+
+  <body>
+    <h1 class="title">Contact us</h1>
+    <p>Menu:</p>
+    <menu class="menu">
+      <li><a target="_self" href="../index.html">Home</a></li>
+      <li><a target="_self" href="our-team.html">Our team</a></li>
+      <li><a target="_self" href="contacts.html">Contact us</a></li>
+      <li><a target="_self" href="about.html">About</a></li>
+    </menu>
+    <form>
+      <fieldset>
+        <legend>Request</legend>
+        <label for="request-type">Request type:</label>
+        <select id="request-type" name="request-type">
+          <option>General request</option>
+          <option>Complaint</option>
+          <option>Feedback</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Provide your contact details:</legend>
+        <label for="first-name">First name:</label>
+        <input type="text" id="first-name" name="first-name" />
+        <label for="last-name">Last name:</label>
+        <input type="text" id="last-name" name="last-name" />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="phone-number">Phone number:</label>
+        <input type="tel" id="phone-number" name="phone-number" required />
+      </fieldset>
+      <fieldset>
+        <legend>Please describe your request below:</legend>
+        <label for="request">Request:</label>
+        <textarea rows="15" cols="30" id="request" name="request"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Submit the form:</legend>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
