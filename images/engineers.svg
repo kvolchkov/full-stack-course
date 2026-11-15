@@ -1,0 +1,38 @@
+<svg viewBox="0 0 250 250" width="250" height="250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="250" height="250" rx="15" fill="#1e1e1e" />
+  
+  <!-- Terminal glow effects -->
+  <rect x="20" y="20" width="210" height="210" rx="8" fill="#111111" stroke="#333333" stroke-width="2" />
+  <text x="30" y="40" fill="#4caf50" font-family="monospace" font-size="10">> squad.deploy(9_minions);</text>
+
+  <!-- Reusable Mini-Minion Template -->
+  <defs>
+    <g id="eng">
+      <rect x="0" y="0" width="28" height="50" rx="14" fill="#fbc02d" />
+      <rect x="0" y="28" width="28" height="22" fill="#263238" /> <!-- Hoodie -->
+      <circle cx="14" cy="20" r="8" fill="#b0bec5" />
+      <circle cx="14" cy="20" r="6" fill="#ffffff" />
+      <circle cx="14" cy="20" r="2.5" fill="#212121" />
+      <!-- Tiny Laptop -->
+      <rect x="-6" y="45" width="40" height="4" rx="1" fill="#90a4ae" />
+      <polygon points="-4,45 32,45 28,30 0,30" fill="#cfd8dc" />
+    </g>
+  </defs>
+
+  <!-- 9 Engineers arranged across 3 rows -->
+  <!-- Row 1 -->
+  <use href="#eng" x="35" y="65" />
+  <use href="#eng" x="110" y="65" />
+  <use href="#eng" x="185" y="65" />
+
+  <!-- Row 2 -->
+  <use href="#eng" x="35" y="125" />
+  <use href="#eng" x="110" y="125" />
+  <use href="#eng" x="185" y="125" />
+
+  <!-- Row 3 -->
+  <use href="#eng" x="35" y="185" />
+  <use href="#eng" x="110" y="185" />
+  <use href="#eng" x="185" y="185" />
+</svg>
