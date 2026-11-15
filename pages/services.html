@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/table.css" />
+    <link rel="stylesheet" href="../style/normalize.css" />
     <title>Document</title>
   </head>
   <body>
@@ -17,6 +19,41 @@
         <li><a target="_self" href="about.html">About</a></li>
       </menu>
     </div>
-    <div class="container"></div>
+    <div class="container">
+      <table class="services-table">
+        <caption>
+          Our services
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col">What the company does</th>
+            <th scope="col">Example deliverable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web development</td>
+            <td>Builds websites and web applications</td>
+            <td>Company website</td>
+          </tr>
+          <tr>
+            <td>Mobile app development</td>
+            <td>Creates apps for phones and tablets</td>
+            <td>iOS or Android app</td>
+          </tr>
+          <tr>
+            <td>UI/UX design</td>
+            <td>Plans how an app looks and feels</td>
+            <td>Wireframes and screen designs</td>
+          </tr>
+          <tr>
+            <td>Software testing</td>
+            <td>Checks software for bugs and usability issues</td>
+            <td>Test report</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
