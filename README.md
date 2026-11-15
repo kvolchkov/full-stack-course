@@ -1,8 +1,8 @@
-# Home-Work 4
+# Home-Work 6
 
 ## Goal:
 
-Improve CSS knowledge
+CSS Tables
 
 ## Technologies used:
 
@@ -12,4 +12,12 @@ Improve CSS knowledge
 ## Open the website
 
 To open the website, open the link [https://kvolchkov.github.io/full-stack-course/](https://kvolchkov.github.io/full-stack-course/)
-The website is already checked, in the scope of home-work 4.
+
+## Testing details
+
+The website was tested in 2 browsers:
+
+- Chrome
+- Safari
+
+Result: Testing has found no major differences
