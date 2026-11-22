@@ -42,3 +42,7 @@ I applied different styles to these classes:
   margin-right: 10px;
 }
 ```
+
+### Note:
+
+After adjusting styles for these two cards (in part 4 of the home task), the difference between two cards became less visible.
