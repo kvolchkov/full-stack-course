@@ -10,15 +10,22 @@
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 .container.client {
@@ -52,6 +59,9 @@ body {
 }
 
 .footer {
-  margin-top: 40px;
-  margin-left: 90%;
+  text-align: right;
+}
+
+.footer__copyright {
+  margin: 40px 0 16px;
 }
