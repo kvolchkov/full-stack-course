@@ -1,8 +1,8 @@
-# Home-Work 6
+# Home-Work 7
 
 ## Goal:
 
-CSS Tables
+Block model and positioning
 
 ## Technologies used:
 
@@ -13,44 +13,32 @@ CSS Tables
 
 To open the website, open the link [https://kvolchkov.github.io/full-stack-course/](https://kvolchkov.github.io/full-stack-course/)
 
-## Testing details
+## Details
 
-### The website was tested in 2 browsers:
+### Block structure:
 
-- Chrome
-- Safari
+I added two cards `.card-1` and `.card-2` to highlight differences between
 
-### Results:
+- padding
+- border
+- margin
 
-- Testing has found no major UI differences
-- The table is displayed correctly
-- Styles show that the `services.html` page consumes the `style.css` correctly.
-
-### Evidence:
-
-Font is applied:
+I applied different styles to these classes:
 
 ```css
-- font-family
-Roboto, sans-serif
+.container.client.card-1 {
+  padding-left: 50px; -> the text is shifted to the right
+  border: 5px solid #000; -> the element has a thick, black border
+  margin-top: 20px; -> the element has increased margins from top and bottom
+  margin-bottom: 20px;
+}
 ```
 
-All margine are set to 0 due to the normalization
-
 ```css
-- margin-bottom
-0px
-- margin-left
-0px
-- margin-right
-0px
-- margin-top
-0px
-```
-
-The max-width is set to 1200
-
-```css
-- max-width
-1200px
+.container.client.card-2 {
+  padding-bottom: 50px; -> the text is shifted 50px from the bottom
+  border: 4px solid red; -> the element has a thick, red border
+  margin-left: 30px; -> the element has increased margins from left and right
+  margin-right: 10px;
+}
 ```
