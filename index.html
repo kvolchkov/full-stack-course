@@ -9,17 +9,47 @@
     <title>Title: Home task 8</title>
   </head>
   <body>
-    <header>
-      <h1 class="title container">Home task 8</h1>
+    <header class="header header--fixed">
+      <h1 class="container header__title">Home task 8</h1>
     </header>
-    <nav>
+    <nav class="nav">
       <div class="container">
         <menu class="menu">
-          <li><a target="_self" href="index.html">Home</a></li>
-          <li><a target="_self" href="pages/our-team.html">Our team</a></li>
-          <li><a target="_self" href="pages/services.html">Services</a></li>
-          <li><a target="_self" href="pages/contacts.html">Contact us</a></li>
-          <li><a target="_self" href="pages/about.html">About</a></li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link--disabled" target="_self" href="#">Home</a>
+          </li>
+          <li class="nav__menu-item">
+            <a
+              class="nav__menu-link--active"
+              target="_self"
+              href="pages/our-team.html"
+              >Our team</a
+            >
+          </li>
+          <li class="nav__menu-item">
+            <a
+              class="nav__menu-link--active"
+              target="_self"
+              href="pages/services.html"
+              >Services</a
+            >
+          </li>
+          <li class="nav__menu-item">
+            <a
+              class="nav__menu-link--active"
+              target="_self"
+              href="pages/contacts.html"
+              >Contact us</a
+            >
+          </li>
+          <li class="nav__menu-item">
+            <a
+              class="nav__menu-link--active"
+              target="_self"
+              href="pages/about.html"
+              >About</a
+            >
+          </li>
         </menu>
       </div>
     </nav>
@@ -35,7 +65,7 @@
             <li class="list-item">
               Item 1
               <button
-                class="button button-item-one"
+                class="button button-item-one main__button"
                 type="button"
                 id="button-accept"
               >
@@ -45,7 +75,7 @@
             <li class="list-item">
               Item 2
               <button
-                class="button button-item-two"
+                class="button button-item-two main__button"
                 type="button"
                 id="button-decline"
               >
@@ -55,7 +85,7 @@
             <li class="list-item">
               Item 3
               <button
-                class="button button-item-three"
+                class="button button-item-three main__button"
                 type="button"
                 id="button-cancel"
               >
@@ -85,8 +115,8 @@
         </div>
       </div>
     </main>
-    <footer>
-      <div class="container footer"><p>2026</p></div>
+    <footer class="container footer">
+      <p class="footer__copyright">&copy; home-task-8</p>
     </footer>
   </body>
 </html>
