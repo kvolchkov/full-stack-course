@@ -72,3 +72,16 @@ DevTools shows that css properties are correctly applied to both cards `.card-1`
   background-color: orange;
 }
 ```
+
+## Testing
+
+Testing was done in 2 browsers:
+
+- Chrome
+- Safari
+
+The testing shows that:
+
+- Two cards are added and displayed correctly
+- The Badge does not overlap the `card-1` content when the screen is narrow
+- The Badge is placed on top of the card
