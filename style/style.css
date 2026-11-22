@@ -10,15 +10,22 @@
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 .container.client {
@@ -49,4 +56,34 @@ body {
   position: absolute;
   top: 5px;
   right: 10px;
+}
+
+.footer {
+  text-align: right;
+}
+
+.footer__copyright {
+  margin: 40px 0 16px;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 5px;
+}
+
+.grid__cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  background-color: orange;
+  box-sizing: border-box;
 }

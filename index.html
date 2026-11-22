@@ -6,76 +6,112 @@
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/reset.css" />
-    <title>Title: Home task 7</title>
+    <title>Title: Home task 8</title>
   </head>
   <body>
-    <h1 class="title container">Home task 7</h1>
-    <div class="container">
-      <menu class="menu">
-        <li><a target="_self" href="index.html">Home</a></li>
-        <li><a target="_self" href="pages/our-team.html">Our team</a></li>
-        <li><a target="_self" href="pages/services.html">Services</a></li>
-        <li><a target="_self" href="pages/contacts.html">Contact us</a></li>
-        <li><a target="_self" href="pages/about.html">About</a></li>
-      </menu>
-    </div>
-    <div class="container">
-      <h2 class="subtitle">Lorem</h2>
-      <p class="text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut,
-        similique?
-      </p>
-      <div>
-        <ul>
-          <li class="list-item">
-            Item 1
-            <button
-              class="button button-item-one"
-              type="button"
-              id="button-accept"
-            >
-              Accept
-            </button>
+    <header class="header header--fixed">
+      <h1 class="container header__title">Home task 8</h1>
+    </header>
+    <nav class="nav">
+      <div class="container">
+        <menu class="menu">
+          <li class="nav__menu-item">
+            <a class="nav__menu-link--disabled" target="_self" href="#">Home</a>
           </li>
-          <li class="list-item">
-            Item 2
-            <button
-              class="button button-item-two"
-              type="button"
-              id="button-decline"
+          <li class="nav__menu-item">
+            <a
+              class="nav__menu-link--active"
+              target="_self"
+              href="pages/our-team.html"
+              >Our team</a
             >
-              Decline
-            </button>
           </li>
-          <li class="list-item">
-            Item 3
-            <button
-              class="button button-item-three"
-              type="button"
-              id="button-cancel"
+          <li class="nav__menu-item">
+            <a
+              class="nav__menu-link--active"
+              target="_self"
+              href="pages/services.html"
+              >Services</a
             >
-              Cancel
-            </button>
           </li>
-        </ul>
+          <li class="nav__menu-item">
+            <a
+              class="nav__menu-link--active"
+              target="_self"
+              href="pages/contacts.html"
+              >Contact us</a
+            >
+          </li>
+          <li class="nav__menu-item">
+            <a
+              class="nav__menu-link--active"
+              target="_self"
+              href="pages/about.html"
+              >About</a
+            >
+          </li>
+        </menu>
       </div>
-    </div>
-    <div class="container">
-      <h2>Lorem</h2>
-      <p class="text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut,
-        similique?
-      </p>
-      <div>
-        <p>
-          <a class="link" href="https://www.google.com" target="_blank"
-            >google</a
-          >
+    </nav>
+    <main>
+      <div class="container">
+        <h2 class="subtitle">Lorem</h2>
+        <p class="text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut,
+          similique?
         </p>
-        <p>
-          <a class="link" href="https://www.yahoo.com" target="_blank">yahoo</a>
-        </p>
+        <div>
+          <ul>
+            <li class="list-item">
+              Item 1
+              <button
+                class="button button-item-one main__button"
+                type="button"
+                id="button-accept"
+              >
+                Accept
+              </button>
+            </li>
+            <li class="list-item">
+              Item 2
+              <button
+                class="button button-item-two main__button"
+                type="button"
+                id="button-decline"
+              >
+                Decline
+              </button>
+            </li>
+            <li class="list-item">
+              Item 3
+              <button
+                class="button button-item-three main__button"
+                type="button"
+                id="button-cancel"
+              >
+                Cancel
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+      <div class="container">
+        <h2>Grid example:</h2>
+        <div class="grid">
+          <div class="grid__cell">1</div>
+          <div class="grid__cell">2</div>
+          <div class="grid__cell">3</div>
+          <div class="grid__cell">4</div>
+          <div class="grid__cell">5</div>
+          <div class="grid__cell">6</div>
+          <div class="grid__cell">7</div>
+          <div class="grid__cell">8</div>
+          <div class="grid__cell">9</div>
+       
+      </div>
+    </main>
+    <footer class="container footer">
+      <p class="footer__copyright">&copy; home-task-8</p>
+    </footer>
   </body>
 </html>

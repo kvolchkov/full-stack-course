@@ -1,8 +1,8 @@
-# Home-Work 7
+# Home-Work 8
 
 ## Goal:
 
-Block model and positioning
+Flex box and Grid
 
 ## Technologies used:
 
@@ -15,61 +15,63 @@ To open the website, open the link [https://kvolchkov.github.io/full-stack-cours
 
 ## Details
 
-### 1. Block structure:
+### 1. Semantics
 
-I added two cards `.card-1` and `.card-2` to highlight differences between
+Semantic tags like `header`, `nav`, `main`, and `footer` are added to all pages
 
-- padding
-- border
-- margin
+### 2. BEM-naming
 
-I applied different styles to these classes:
+The BEM-naming is added only to the `index.html` page. For example:
+
+```html
+<header class="header header--fixed"></header>
+```
+
+or
+
+```html
+<nav class="nav">
+  <div class="container">
+    <menu class="menu">
+      <li class="nav__menu-item">
+        <a class="nav__menu-link--disabled" target="_self" href="#">Home</a>
+      </li>
+    </menu>
+  </div>
+</nav>
+```
+
+### 3. Flex box:
+
+The `flex` property is added to the `.menu` class with gaps between menu items.
 
 ```css
-.client.card-1 {
-  padding-left: 50px; -> the text is shifted to the right
-  border: 5px solid #000; -> the element has a thick, black border
-  margin-top: 20px; -> the element has increased margins from top and bottom
-  margin-bottom: 20px;
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 ```
 
+### 4. Grid items:
+
+I added 9 grid items to the `index.html` page. Grid-items are displayed in 3 rows and 3 columns (9 elements in total). The style is applied to this element:
+
 ```css
-.client.card-2 {
-  padding-bottom: 50px; -> the text is shifted 50px from the bottom
-  border: 4px solid red; -> the element has a thick, red border
-  margin-left: 30px; -> the element has increased margins from left and right
-  margin-right: 10px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 5px;
 }
-```
 
-### Note:
-
-After adjusting styles for these two cards (in part 4 of the home task), the difference between two cards became less visible.
-
-### 3. DevTools
-
-DevTools shows that css properties are correctly applied to both cards `.card-1` and `.card-2`:
-
-```css
-.client.card-1 {
-  position: relative;
-  padding-top: 30px;
-  padding-left: 50px;
-  border: 5px solid #000;
-  margin: 24px auto;
-  width: 90%;
+.grid__cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
   background-color: orange;
-}
-```
-
-```css
-.client.card-2 {
-  padding-bottom: 50px;
-  border: 4px solid red;
-  margin: 24px auto;
-  width: 90%;
-  background-color: orange;
+  box-sizing: border-box;
 }
 ```
 
@@ -82,6 +84,6 @@ Testing was done in 2 browsers:
 
 The testing shows that:
 
-- Two cards are added and displayed correctly
-- The Badge does not overlap the `card-1` content when the screen is narrow
-- The Badge is placed on top of the card
+- Flex item is displayed correctly
+- Grid is displayed correctly
+- Styles are applied to both elements
